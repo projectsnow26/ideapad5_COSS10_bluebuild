@@ -12,7 +12,6 @@ install:
   
   # ACPI
   - acpid
-  - acpi
   
   # TLP alternative (comment out power-profiles-daemon if using TLP)
   # - tlp
