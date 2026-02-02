@@ -30,12 +30,8 @@ modules:
 
   # ========================================
   # DESKTOP ENVIRONMENT - GNOME
-  # Available options for CentOS Stream 9:
-  #   desktop-plasma-fixed.yml  <- KDE Plasma 5.27 (EPEL 9) - CURRENT
-  #   desktop-gnome-fixed.yml   <- GNOME 40 (base repos)
-  #   desktop-xfce-fixed.yml    <- XFCE (EPEL 9) - lightweight
   # ========================================
-  - from-file: desktop-gnome-fixed.yml
+  - from-file: desktop-gnome.yml
 
   # ========================================
   # APPLICATIONS & TOOLS
