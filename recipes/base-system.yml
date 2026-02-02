@@ -3,6 +3,8 @@
 # Core system utilities - shared across all desktop variants
 
 type: rpm-ostree
+repos:
+  - https://dl.fedoraproject.org/pub/epel/epel-release-latest-%OS_VERSION%.noarch.rpm
 install:
   # Shell & editors
   - bash-completion
