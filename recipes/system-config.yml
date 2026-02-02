@@ -16,7 +16,6 @@ modules:
         - cockpit.socket
         
         # Power & thermal
-        - power-profiles-daemon
         - acpid
         
         # Tuned performance profiles
