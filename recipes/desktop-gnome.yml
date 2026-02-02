@@ -33,10 +33,10 @@ modules:
       - fontconfig
 
       - type: systemd
-    system:
-      enabled:
-        - gdm
+        system:
+          enabled:
+            - gdm
 
-  - type: script
-    scripts:
-      - set-graphical-target.sh
+      - type: script
+        scripts:
+          - set-graphical-target.sh
