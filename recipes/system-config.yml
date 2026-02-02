@@ -6,21 +6,17 @@ modules:
   - type: systemd
     system:
       enabled:
-        # Core services
         - sshd
         - NetworkManager
         - bluetooth
         - firewalld
-        
-        # Cockpit
         - cockpit.socket
-        
-        # Power & thermal
-        - acpid
-        
-        # Tuned performance profiles
+        - gdm
         - tuned
-      
-      # Disable things we don't need
+        - acpid
       disabled:
         - kdump
+
+  - type: script
+    scripts:
+      - set-graphical-target.sh
