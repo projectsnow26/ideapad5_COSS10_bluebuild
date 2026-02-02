@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Enable CRB and EPEL for CentOS Stream 9
+# Enable CRB and EPEL for CentOS Stream 10
 # Removed Budgie COPR - stenstorp/budgie only supports EL8, NOT EL9/CS9
 set -euo pipefail
 
@@ -8,13 +8,10 @@ dnf config-manager --set-enabled crb || true
 
 echo "==> Installing EPEL release packages..."
 dnf -y install \
-    https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm \
+    https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm \
     || true
 
-# NOTE: Budgie COPR repos removed - they do NOT support CentOS Stream 9
-# stenstorp/budgie only builds for Fedora + EL8 (not EL9)
-# Using KDE Plasma from EPEL 9 instead
-
+#Using GNOME 47
 # Verify enabled repos
 echo "==> Enabled repositories:"
 dnf repolist enabled
